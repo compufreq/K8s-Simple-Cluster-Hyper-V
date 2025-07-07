@@ -45,10 +45,12 @@ During Ubuntu installation:
 1. **Language Selection:** English
 2. **Keyboard Layout:** Your layout
 3. **Network Configuration:**
-   - Use the static IPs from cloud-init configs
+   - Navigate to eth0 then open it and instead of disabled choose manual then fill the data below 
+   - Use the static IPs from cloud-init configs (ech machine will have the same data from this part)
       - subnet: 192.168.100.0/24
       - Gateway: 192.168.100.1
       - DNS: 8.8.8.8, 8.8.4.4
+   - Then fill the othe parts of the config from the steps below according to which machine you are configuring:
    - Master:
       - Address: 192.168.100.10
       - hostname: secure-k8s-cluster-master
@@ -62,16 +64,16 @@ During Ubuntu installation:
       - Address: 192.168.100.23
       - hostname: secure-k8s-cluster-worker-3
 
-4. **Storage Configuration:** Use entire disk
-5. **Profile Setup:**
+5. **Storage Configuration:** Use entire disk
+6. **Profile Setup:**
    - Name: k8sadmin
    - Server name: Use hostnames from cloud-init that can be found under: C:\Hyper-V\VHDs
    - Username: k8sadmin
    - Password: (set a secure password)
 
-6. **SSH Setup:** ✅ **Install OpenSSH server**
-7. **Import SSH Identity:** Import from GitHub/Launchpad (optional)
-8. **Featured Server Snaps:** Skip for now
+7. **SSH Setup:** ✅ **Install OpenSSH server**
+8. **Import SSH Identity:** Import from GitHub/Launchpad (optional)
+9. **Featured Server Snaps:** Skip for now
 
 ### **Post-Installation SSH Configuration (if not configured)**
 
