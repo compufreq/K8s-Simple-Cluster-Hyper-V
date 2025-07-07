@@ -354,4 +354,5 @@ sudo crictl ps -a | grep kube-apiserver
 sudo crictl logs <CONTAINER_ID>
 
 ```
-These steps will establish a complete, production-ready Kubernetes platform with GitOps, monitoring, and security best practices. The key is to implement these incrementally and validate each step before proceeding to the next.
+These steps will establish a complete, Kubernetes platform with GitOps, monitoring, and later on next iterations will be updated to include security best practices. 
+The key is to implement these incrementally and validate each step before proceeding to the next.
