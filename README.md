@@ -1,5 +1,3 @@
-Based on the search results and the complete deployment setup, here are the detailed script running steps in the correct order:
-
 ## **Phase 1: Infrastructure Preparation (Windows Host)**
 
 ### **Step 1: Initial Setup**
